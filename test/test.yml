@@ -1,0 +1,9 @@
+- name: test playbook
+  hosts: Filebeat-Client
+  remote_user: ubuntu
+  become: yes
+  become_method: sudo
+  roles:
+    - ../../ansible-filebeat
+  vars:
+    ansible_ssh_private_key_file: "~/.ssh/private_key.pem"

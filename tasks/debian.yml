@@ -1,0 +1,8 @@
+---
+
+- name: install filebeat
+  apt:
+    name: "https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-5.6.3-amd64.deb"
+    state: present
+  notify:
+    - restart filebeat

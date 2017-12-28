@@ -1,0 +1,17 @@
+---
+galaxy_info:
+  author: BELARBI Samy (update Dec 2017)
+  description: Installs Elastic's Filebeat for forwarding logs.
+  license: BSD
+  min_ansible_version: 1.2
+  platforms:
+  - name: ELK
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  categories:
+  - monitoring
+  - system
+dependencies: []
